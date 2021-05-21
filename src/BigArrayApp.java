@@ -5,7 +5,7 @@ public class BigArrayApp {
 
     public static void main(String[] args) {
 
-        int[] bigArray = new int[10];
+        int[] bigArray = new int[1000];
 
         fillArray(bigArray);
 
