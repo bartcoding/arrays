@@ -1,20 +1,24 @@
+import java.util.Random;
+
 public class BigArrayApp {
 
 
     public static void main(String[] args) {
 
-        int[] bigArray = new int[4000];
+        int[] bigArray = new int[10];
 
-        bigArray[3999] =8;
+        fillArray(bigArray);
 
         printArray(bigArray);
 
     }
 
-    public static void fillArray(){
-
-
-
+    //fill the array with random numbers between 0 and 9 (9 included)
+    public static void fillArray(int[] array){
+        Random randomGenerator = new Random();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = randomGenerator.nextInt(10);
+        }
 
     }
 
